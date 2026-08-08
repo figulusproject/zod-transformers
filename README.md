@@ -1,5 +1,10 @@
 # zod-transformers
 
+[![CI](https://github.com/figulusproject/zod-transformers/actions/workflows/ci.yml/badge.svg)](https://github.com/figulusproject/zod-transformers/actions/workflows/ci.yml)
+[![NPM version](https://badge.fury.io/js/zod-transformers.svg)](http://badge.fury.io/js/zod-transformers)
+
+> _Everyone has the right to resist occupation._
+
 A collection of reusable Zod transform/superRefine schema factories for common patterns: empty-string coercion, stringified JSON/JSONC/TOML/YAML, prefix stripping, numeric strings, and filesystem-path validation.
 
 ## Installation

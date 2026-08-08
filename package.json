@@ -1,6 +1,6 @@
 {
   "name": "zod-transformers",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A collection of reusable Zod transform/superRefine schema factories",
   "keywords": [
     "zod",

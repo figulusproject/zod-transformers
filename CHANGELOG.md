@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.0.0] - 2026-08-08
+
+### Added
+
+- Publish workflow: builds package and publishes to npm when vX.X.X tag is pushed.
+
+### Changed
+
+- First stable release - no functional changes from `0.1.0`.
+
 ## [0.1.0] - 2026-08-08
 
 ### Added
