@@ -1,0 +1,83 @@
+{
+  "name": "zod-transformers",
+  "version": "0.1.0",
+  "description": "A collection of reusable Zod transform/superRefine schema factories",
+  "keywords": [
+    "zod",
+    "schema",
+    "validation",
+    "transform",
+    "json",
+    "jsonc",
+    "toml",
+    "yaml"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./node": {
+      "import": "./dist/node.js",
+      "types": "./dist/node.d.ts"
+    },
+    "./toml": {
+      "import": "./dist/toml.js",
+      "types": "./dist/toml.d.ts"
+    },
+    "./yaml": {
+      "import": "./dist/yaml.js",
+      "types": "./dist/yaml.d.ts"
+    },
+    "./jsonc": {
+      "import": "./dist/jsonc.js",
+      "types": "./dist/jsonc.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "test": "vitest run",
+    "typecheck": "tsc -b --force",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "peerDependencies": {
+    "zod": "^4.0.0",
+    "smol-toml": "^1.0.0",
+    "yaml": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "smol-toml": {
+      "optional": true
+    },
+    "yaml": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "prettier": "^3.8.3",
+    "smol-toml": "^1.0.0",
+    "typescript": "^5",
+    "vitest": "^4",
+    "yaml": "^2.0.0",
+    "zod": "^4.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/figulusproject/zod-transformers"
+  },
+  "author": "The Figulus Project",
+  "license": "MIT"
+}
